@@ -39,7 +39,8 @@ namespace CgiProxy
 
             var httpClient = new HttpClient();
 
-            var response = await httpClient.PostAsync(url, new ByteArrayContent(Encoding.UTF8.GetBytes(postData)));
+            var content = new ByteArrayContent(Encoding.UTF8.GetBytes(postData));
+            var response = await httpClient.PostAsync(url, content);
 
             var responseJson = await response.Content.ReadAsStringAsync();
 
