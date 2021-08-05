@@ -1,7 +1,7 @@
 # CgiProxy
 
 Apacheとかnginxの背後にある直接叩けないAPIサーバをcgi経由で叩くproxy。
-reverse proxy使えって？常にその手のが自分で設定できる環境にいるとは限らないのですよ😅😅😅
+reverse proxy使えって？常にその手のが自分で設定できるとは限らないのですよ😅😅😅
 
 (POST且つ`Content-type: application/json`以外の用途あまり考えてないです)
 
